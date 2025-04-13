@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Ajoutez cette ligne pour permettre le déclenchement manuel
+  workflow_dispatch:  # Permet le déclenchement manuel
+  schedule:
+    - cron: '0 19 * * *'  # S'exécute tous les jours à 19h UTC (21h heure française)
 
 jobs:
   build:
@@ -35,7 +37,7 @@ jobs:
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo dpkg -i google-chrome-stable_current_amd64.deb
         sudo apt-get install -f
-        CHROME_DRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`
+        CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
         wget https://chromedriver.storage.googleapis.com/${CHROME_DRIVER_VERSION}/chromedriver_linux64.zip
         unzip chromedriver_linux64.zip
         sudo mv chromedriver /usr/local/bin/
