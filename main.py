@@ -17,7 +17,7 @@ pytesseract.pytesseract.tesseract_cmd = os.getenv('TESSERACT_CMD', '/usr/bin/tes
 
 # Compte email à visiter
 EMAIL = "contact@technovr-leonard.fr"
-DEFAULT_PASSWORD = "Samedi08."
+DEFAULT_PASSWORD = "Leonard2025"
 IMAP_SERVER = "ssl0.ovh.net"
 
 def log_console(message):
