@@ -163,20 +163,24 @@ def traiter_compte_email(email_adresse, driver):
         log_console(f"📨 {len(email_ids)} email(s) à traiter pour {email_adresse}")
 
         for email_id in email_ids:
-            _, msg = imap.fetch(email_id, '(RFC822)')
-            raw_email = msg[0][1]
-            email_message = email.message_from_bytes(raw_email)
+            try:
+                _, msg = imap.fetch(email_id, '(RFC822)')
+                raw_email = msg[0][1]
+                email_message = email.message_from_bytes(raw_email)
 
-            if traiter_email(imap, driver, email_id, email_message):
-                # Supprimer l'email si validation réussie
-                imap.store(email_id, '+FLAGS', '\\Deleted')
-                imap.expunge()
-                log_console("🗑️ Email traité et supprimé.")
-            else:
-                # Déplacer l'email en cas d'échec
-                log_console("❌ Déplacement de l'email dans 'Echecs_Mailinblack'.")
-                imap.store(email_id, '+X-GM-LABELS', '(Echecs_Mailinblack)')
-                imap.store(email_id, '-X-GM-LABELS', '(Mailinblack)')
+                if traiter_email(imap, driver, email_id, email_message):
+                    # Supprimer l'email si validation réussie
+                    imap.store(email_id, '+FLAGS', '\\Deleted')
+                    imap.expunge()
+                    log_console("🗑️ Email traité et supprimé.")
+                else:
+                    # Déplacer l'email en cas d'échec
+                    log_console("❌ Déplacement de l'email dans 'Echecs_Mailinblack'.")
+                    imap.copy(email_id, '"INBOX.Echecs_Mailinblack"')
+                    imap.store(email_id, '+FLAGS', '\\Deleted')
+                    imap.expunge()
+            except Exception as e:
+                log_console(f"❌ Erreur lors du traitement de l'email {email_id} : {str(e)}")
 
         log_console(f"✅ Tous les emails ont été traités pour {email_adresse}.")
         imap.logout()
