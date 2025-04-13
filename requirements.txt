@@ -1,4 +1,3 @@
-email
 beautifulsoup4
 selenium
 opencv-python
