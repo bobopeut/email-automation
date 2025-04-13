@@ -53,7 +53,7 @@ SPECIFIC_PASSWORDS = {
     "contact@univers-viager-consult.fr": "Cervera24.",
     "contact@airzen-radio.fr": "AIRZEN2025.",
     "contact@webecode.fr": "WEBECODE2025.",
-    "contact@technovr-leonard.fr": "Leonard2025"
+    "contact@technovr-leonard.fr": "Leonard2025",
     "contact@lmz-prod.fr": "lmz2024.."
 }
 
