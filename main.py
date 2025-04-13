@@ -17,7 +17,7 @@ pytesseract.pytesseract.tesseract_cmd = os.getenv('TESSERACT_CMD', '/usr/bin/tes
 
 # Compte email à visiter
 EMAIL = "contact@technovr-leonard.fr"
-DEFAULT_PASSWORD = "Leonard2025"
+DEFAULT_PASSWORD = "Samedi08."
 IMAP_SERVER = "ssl0.ovh.net"
 
 def log_console(message):
@@ -60,11 +60,21 @@ def resoudre_captcha(driver):
         )
         input_field.clear()
         input_field.send_keys(text)
+        log_console(f"🔍 Texte saisi dans le champ CAPTCHA : {text}")
+
         submit_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, "capcha-submit"))
         )
         submit_button.click()
-        return True
+        log_console("🔍 CAPTCHA soumis.")
+
+        # Vérification de la validation
+        if verifier_validation(driver):
+            log_console("✅ Validation réussie après résolution du CAPTCHA.")
+            return True
+        else:
+            log_console("❌ Validation échouée après résolution du CAPTCHA.")
+            return False
     except Exception as e:
         log_console(f"❌ Erreur lors de la résolution du CAPTCHA : {str(e)}")
         return False
