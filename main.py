@@ -38,7 +38,7 @@ EMAILS = [
     "contact@peutevynck-digitalize.fr", "contact@bpc-analytics.fr", "contact@boris-consult.fr",
     "contact@proxyclean-services.com", "contact@emb-informatique.fr", "contact@rhdepochepro.fr",
     "contact@balioavantages.fr", "contact@univers-viager-consult.fr", "contact@airzen-radio.fr",
-    "contact@webecode.fr", "contact@lmz-prod.fr","contact@technovr-leonard.fr", "contact@lmz-prod.fr"
+    "contact@webecode.fr", "contact@lmz-prod.fr","contact@technovr-leonard.fr", "contact@lmz-prod.fr","contact@domainedaugeron.fr"
 ]
 
 # Mot de passe général
@@ -54,7 +54,8 @@ SPECIFIC_PASSWORDS = {
     "contact@airzen-radio.fr": "AIRZEN2025.",
     "contact@webecode.fr": "WEBECODE2025.",
     "contact@technovr-leonard.fr": "Leonard2025",
-    "contact@lmz-prod.fr": "lmz2024.."
+    "contact@lmz-prod.fr": "lmz2024..",
+    "contact@domainedaugeron.fr": "AUGERON2025."
 }
 
 IMAP_SERVER = "ssl0.ovh.net"
