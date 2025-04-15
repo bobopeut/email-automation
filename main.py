@@ -47,7 +47,7 @@ DEFAULT_PASSWORD = "Samedi08."
 # Mots de passe spécifiques
 SPECIFIC_PASSWORDS = {
     "contact@proxyclean-services.com": "Proxy2025.",
-    "contact@emb-informatique.fr": "EMB2025.",
+    "contact@emb-informatique.fr": "EMB2025...",
     "contact@rhdepochepro.fr": "Celink2025.",
     "contact@balioavantages.fr": "BALIO2025.",
     "contact@univers-viager-consult.fr": "Cervera24.",
