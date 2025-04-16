@@ -17,27 +17,7 @@ pytesseract.pytesseract.tesseract_cmd = os.getenv('TESSERACT_CMD', '/usr/bin/tes
 
 # Liste des comptes email à visiter
 EMAILS = [
-    "contact@bpc-ent.com", "contact@labaseviti.com", "boris@boris-bpc-ent.fr",
-    "boris@boris-ent-bpc.fr", "boris@boris-peutevynck.fr", "boris@bpc-ent-boris.fr",
-    "boris@ent-bpc-boris.fr", "boris@peutevynck-boris.fr", "boris@peutevynckborisbpc.fr",
-    "contact@borispeutevynck.fr", "contact@bpc-agency.fr", "contact@bpc-company.fr",
-    "contact@bpc-consulting.fr", "contact@bpc-corp.fr", "contact@bpc-corporation.fr",
-    "contact@bpc-entreprise.fr", "contact@bpc-entreprises.fr", "contact@bpc-operations.fr",
-    "contact@bpc-solutions.fr", "contact@ent-bpc.com", "contact@laurachambon.com",
-    "contact@laura-chambon.com", "contact@peutevynck.fr", "contact@peutevynckboris.fr",
-    "laura@chambonlaura.fr", "laura@chambon-laura.fr", "contact@technovr-leonard.fr",
-    "contact@clutch-frame-agency.fr", "contact@bpc-pro.fr", "contact@peutevynck-strategy.fr",
-    "contact@bpc-link.fr", "contact@boris-dynamics.fr", "contact@bpc-direct.fr",
-    "contact@peutevynck-expert.fr", "contact@boris-network.fr", "contact@peutevynck-growth.fr",
-    "contact@bpc-hub.fr", "contact@boris-connect.fr", "contact@peutevynck-marketer.fr",
-    "contact@bpc-focus.fr", "contact@boris-leads.fr", "contact@peutevynck-active.fr",
-    "contact@bpc-drive.fr", "contact@boris-strategic.fr", "contact@peutevynck-tools.fr",
-    "contact@bpc-engine.fr", "contact@boris-optimize.fr", "contact@bpc-cloud.fr",
-    "contact@peutevynck-elite.fr", "contact@bpc-intelligence.fr", "contact@boris-automate.fr",
-    "contact@peutevynck-force.fr", "contact@bpc-track.fr", "contact@boris-smart.fr",
-    "contact@peutevynck-digitalize.fr", "contact@bpc-analytics.fr", "contact@boris-consult.fr",
-    "contact@proxyclean-services.com", "contact@emb-informatique.fr", "contact@rhdepochepro.fr",
-    "contact@balioavantages.fr", "contact@univers-viager-consult.fr", "contact@airzen-radio.fr",
+    "contact@airzen-radio.fr",
     "contact@webecode.fr", "contact@lmz-prod.fr","contact@technovr-leonard.fr", "contact@lmz-prod.fr","contact@domainedaugeron.fr"
 ]
 
