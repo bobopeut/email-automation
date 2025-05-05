@@ -6,7 +6,8 @@ on:
       - main
   workflow_dispatch:  # Permet le déclenchement manuel
   schedule:
-    - cron: '0 19 * * *'  # S'exécute tous les jours à 19h UTC (21h heure française)
+    - cron: '0 10 * * *'  # 12h heure française (10h UTC)
+    - cron: '0 17 * * *'  # 19h heure française (17h UTC)
 
 jobs:
   build:
