@@ -59,7 +59,7 @@ SPECIFIC_PASSWORDS = {
     "contact@champagne-yves-loison.fr": "LOISON2025.",
     "contact@nextbroadcastmedia-audio.be": "NEXT2025.",
     "contact@chateaulagorce.fr": "LAGORCE2025.",
-    "contact@tamsprod.fr": "TAMSPROD2025.",
+    "contact@tamsprod.fr": "TamsProd0424?!",
 }
 
 IMAP_SERVER = "ssl0.ovh.net"
