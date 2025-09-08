@@ -38,7 +38,7 @@ EMAILS = [
     "contact@peutevynck-digitalize.fr", "contact@bpc-analytics.fr", "contact@boris-consult.fr",
     "contact@proxyclean-services.com", "contact@emb-informatique.fr", "contact@rhdepochepro.fr",
     "contact@balioavantages.fr", "contact@univers-viager-consult.fr","contact@airzen-radio.fr",
-    "contact@webecode.fr", "contact@lmz-prod.fr","contact@technovr-leonard.fr", "contact@lmz-prod.fr","contact@domainedaugeron.fr","contact@champagne-yves-loison.fr","contact@nextbroadcastmedia-audio.be","contact@chateaulagorce.fr","contact@tamsprod.fr","contact@design-leo.fr","contact@bergerac-us-tennis.fr","contact@chateau-de-peyrel.fr","contact@biosalines-cosmetique.fr","contact@paonperchevin.fr",
+    "contact@webecode.fr", "contact@lmz-prod.fr","contact@technovr-leonard.fr", "contact@lmz-prod.fr","contact@domainedaugeron.fr","contact@champagne-yves-loison.fr","contact@nextbroadcastmedia-audio.be","contact@chateaulagorce.fr","contact@tamsprod.fr","contact@design-leo.fr","contact@bergerac-us-tennis.fr","contact@chateau-de-peyrel.fr","contact@biosalines-cosmetique.fr","contact@paonperchevin.fr","contact@sovageboissons.fr",
 ]
 
 # Mot de passe général
@@ -65,6 +65,7 @@ SPECIFIC_PASSWORDS = {
     "contact@chateau-de-peyrel.fr": "Peyrel24130",
     "contact@biosalines-cosmetique.fr": "BIOSALINES2025.",
     "contact@paonperchevin.fr": "PAON2025.",
+    "contact@sovageboissons.fr": "SOVAGE2025.",
 }
 
 IMAP_SERVER = "ssl0.ovh.net"
