@@ -63,9 +63,10 @@ SPECIFIC_PASSWORDS = {
     "contact@design-leo.fr": "LEODESIGN2025.",
     "contact@bergerac-us-tennis.fr": "USBTENNIS2025.",
     "contact@chateau-de-peyrel.fr": "Peyrel24130",
-    "contact@biosalines-cosmetique.fr": "BIOSALINES2025.",
+    "contact@biosalines-cosmetique.fr": "BIOSALINES2025..",
     "contact@paonperchevin.fr": "PAON2025.",
     "contact@sovageboissons.fr": "SOVAGE2025.",
+    "contact@biosalines-cosmetiques.fr": "BIOSALINES2025.",
 }
 
 IMAP_SERVER = "ssl0.ovh.net"
